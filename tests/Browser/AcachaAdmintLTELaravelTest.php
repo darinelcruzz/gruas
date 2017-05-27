@@ -16,11 +16,7 @@ class AcachaAdmintLTELaravelTest extends DuskTestCase
 {
     use DatabaseMigrations;
 
-    /**
-     * Test Landing Page.
-     *
-     * @return void
-     */
+    /*
     public function testLandingPage()
     {
         dump('testLandingPage');
@@ -32,9 +28,7 @@ class AcachaAdmintLTELaravelTest extends DuskTestCase
         });
     }
 
-    /**
-     * Logout.
-     */
+
     private function logout()
     {
         $this->browse(function (Browser $browser) {
@@ -45,11 +39,7 @@ class AcachaAdmintLTELaravelTest extends DuskTestCase
         });
     }
 
-    /**
-     * Test Landing Page with user loged.
-     *
-     * @return void
-     */
+
     public function testLandingPageWithUserLogged()
     {
         dump('testLandingPageWithUserLogged');
@@ -66,12 +56,7 @@ class AcachaAdmintLTELaravelTest extends DuskTestCase
         $this->logout();
     }
 
-    /**
-     * Test Login Page.
-     *
-     *
-     * @return void
-     */
+
     public function testLoginPage()
     {
         dump('testLoginPage');
@@ -82,11 +67,7 @@ class AcachaAdmintLTELaravelTest extends DuskTestCase
         });
     }
 
-    /**
-     * Test Login.
-     *
-     * @return void
-     */
+
     public function testLogin()
     {
         dump('testLogin');
@@ -106,11 +87,7 @@ class AcachaAdmintLTELaravelTest extends DuskTestCase
         $this->logout();
     }
 
-    /**
-     * Test Login required fields.
-     *
-     * @return void
-     */
+
     public function testLoginRequiredFields()
     {
         dump('testLoginRequiredFields');
@@ -125,11 +102,7 @@ class AcachaAdmintLTELaravelTest extends DuskTestCase
         });
     }
 
-    /**
-     * Test Login required fields errors disappears on key down.
-     *
-     * @return void
-     */
+
     public function testLoginRequiredFieldsDisappearsOnKeyDown()
     {
         dump('testLoginRequiredFieldsDissappearsOnKeyDown');
@@ -148,11 +121,7 @@ class AcachaAdmintLTELaravelTest extends DuskTestCase
         });
     }
 
-    /**
-     * Test Login credentials not match.
-     *
-     * @return void
-     */
+
     public function testLoginCredentialsNotMatch()
     {
         dump('testLoginCredentialsNotMatch');
@@ -166,11 +135,7 @@ class AcachaAdmintLTELaravelTest extends DuskTestCase
         });
     }
 
-    /**
-     * Test Login credentials not match disappears on key down.
-     *
-     * @return void
-     */
+
     public function testLoginCredentialsNotMatchDissappearsOnKeyDown()
     {
         dump('testLoginCredentialsNotMatchDissappearsOnKeyDown');
@@ -186,11 +151,7 @@ class AcachaAdmintLTELaravelTest extends DuskTestCase
         });
     }
 
-    /**
-     * Test register page.
-     *
-     * @return void
-     */
+
     public function testRegisterPage()
     {
         dump('testRegisterPage');
@@ -200,11 +161,7 @@ class AcachaAdmintLTELaravelTest extends DuskTestCase
         });
     }
 
-    /**
-     * Test Password reset Page.
-     *
-     * @return void
-     */
+
     public function testPasswordResetPage()
     {
         dump('testPasswordResetPage');
@@ -214,11 +171,7 @@ class AcachaAdmintLTELaravelTest extends DuskTestCase
         });
     }
 
-    /**
-     * Test home page is only for authorized Users.
-     *
-     * @return void
-     */
+
     public function testHomePageForUnauthenticatedUsers()
     {
         dump('testHomePageForUnauthenticatedUsers');
@@ -231,11 +184,7 @@ class AcachaAdmintLTELaravelTest extends DuskTestCase
         });
     }
 
-    /**
-     * Test home page works with Authenticated Users.
-     *
-     * @return void
-     */
+
     public function testHomePageForAuthenticatedUsers()
     {
         dump('testHomePageForAuthenticatedUsers');
@@ -251,11 +200,7 @@ class AcachaAdmintLTELaravelTest extends DuskTestCase
         $this->logout();
     }
 
-    /**
-     * Test log out.
-     *
-     * @return void
-     */
+
     public function testLogout()
     {
         dump('testLogout');
@@ -271,11 +216,7 @@ class AcachaAdmintLTELaravelTest extends DuskTestCase
         });
     }
 
-    /**
-     * Test 404 Error page.
-     *
-     * @return void
-     */
+
     public function test404Page()
     {
         dump('test404Page');
@@ -285,11 +226,7 @@ class AcachaAdmintLTELaravelTest extends DuskTestCase
         });
     }
 
-    /**
-     * Test user registration.
-     *
-     * @return void
-     */
+
     public function testNewUserRegistration()
     {
         dump('testNewUserRegistration');
@@ -310,11 +247,7 @@ class AcachaAdmintLTELaravelTest extends DuskTestCase
         $this->logout();
     }
 
-    /**
-     * Test new user registration required fields.
-     *
-     * @return void
-     */
+
     public function testNewUserRegistrationRequiredFields()
     {
         dump('testNewUserRegistrationRequiredFields');
@@ -333,11 +266,7 @@ class AcachaAdmintLTELaravelTest extends DuskTestCase
         });
     }
 
-    /**
-     * Test new user registration required fields disappears on key down.
-     *
-     * @return void
-     */
+
     public function testNewUserRegistrationRequiredFieldsDissappearsOnKeyDown()
     {
         dump('testNewUserRegistrationRequiredFieldsDissappearsOnKeyDown');
@@ -364,11 +293,7 @@ class AcachaAdmintLTELaravelTest extends DuskTestCase
         });
     }
 
-    /**
-     * Test send password reset.
-     *
-     * @return void
-     */
+
     public function testSendPasswordReset()
     {
         dump('testSendPasswordReset');
@@ -384,11 +309,7 @@ class AcachaAdmintLTELaravelTest extends DuskTestCase
         });
     }
 
-    /**
-     * Test send password reset user not exists.
-     *
-     * @return void
-     */
+
     public function testSendPasswordResetUserNotExists()
     {
         dump('testSendPasswordResetUserNotExists');
@@ -402,11 +323,7 @@ class AcachaAdmintLTELaravelTest extends DuskTestCase
         });
     }
 
-    /**
-     * Test send password reset required fields.
-     *
-     * @return void
-     */
+
     public function testSendPasswordResetRequiredFields()
     {
         dump('testSendPasswordResetRequiredFields');
@@ -419,11 +336,7 @@ class AcachaAdmintLTELaravelTest extends DuskTestCase
         });
     }
 
-    /**
-     * Test send password reset required fields dissapears on key down.
-     *
-     * @return void
-     */
+
     public function testSendPasswordResetRequiredFieldsDisappearsOnKeyDown()
     {
         dump('testSendPasswordResetRequiredFieldsDisappearsOnKeyDown');
@@ -437,5 +350,5 @@ class AcachaAdmintLTELaravelTest extends DuskTestCase
                 ->pause(2000)
                 ->assertDontSee('The email field is required.');
         });
-    }
+    }*/
 }
