@@ -15,10 +15,17 @@ Route::get('/', function () {
     return view('admin');
 });
 
-Route::get('entradas', function () {
-    return "Hola";
-})->name('entries.show');
+Route::get('entradas', [
+    'uses' => 'EntriesController@show',
+    'as' => 'entries.show'
+]);
 
-Route::get('entradas/crear', function () {
-    return 'Adios';
-})->name('entries.create');
+Route::get('entradas/crear', [
+    'uses' => 'EntriesController@create',
+    'as' => 'entries.create'
+]);
+
+Route::post('entradas/crear', [
+    'uses' => 'EntriesController@store',
+    'as' => 'entries.store'
+]);
